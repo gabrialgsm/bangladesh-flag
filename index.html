@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bangladesh Map</title>
+</head>
+<body>
+	<canvas id="bd-map" width="500" height="320" style="border:1px solid #000; background:#0f6501"></canvas>
+
+	<script>
+		var _canvas = document.getElementById("bd-map");
+		var _ctx = _canvas.getContext("2d");
+		_ctx.beginPath();
+		_ctx.arc(250,160,120,0,2*Math.PI);
+		_ctx.stroke();
+		_ctx.fillStyle = "red";
+		_ctx.fill();
+	</script>
+</body>
+</html>
